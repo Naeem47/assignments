@@ -20,16 +20,17 @@ void main() {
   print(days);
 
 //3
-List friends = [
+List <String>friends = [
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
+  "Sunday"
 ];
-
+String result = friends.where((element) => element.startsWith("a")).toString();
+print(result);
 //4
 Map values =({
   "name":"Naeem",
